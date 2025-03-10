@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <section class="header">
+        <h1>Omar</h1>
+        <nav>
+            <div>
+                <ul id="navbar" class="navbar">
+                    <li><i style="font-size: 25px;" id="close" class="close fa fa-times"></i></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="shopping.html"><i class="fa fa-bag-shopping"></i></a></li>
+                </ul>
+            </div>
+            <div class="mobile">
+                <i class="fas fa-outdent" id="bar"></i>
+                <!-- <li style="list-style: none;"><a href=""><i class="fa fa-bag-shopping"></i></a></li> -->
+            </div>
+        </nav>
+    </section>
+
+
+    <section class="pro-details section-p1">
+        <div class="single-pro-image">
+            <img src="product/f1.jpg" width="100%" alt="" id="mainimg">
+
+            <div class="small-img-groub">
+                <div class="small-img-col">
+                    <img src="product/f1.jpg" alt="" id="smallone">
+                </div>
+                <div class="small-img-col">
+                    <img src="product/f2.jpg" alt="" id="smalltwo">
+                </div>
+                <div class="small-img-col">
+                    <img src="product/f3.jpg" alt="" id="smallthree">
+                </div>
+                <div class="small-img-col">
+                    <img src="product/f4.jpg" alt="" id="smallfour">
+                </div>
+                <div class="small-img-col">
+                    <img src="product/n1.jpg" alt=""  id="smallfive">
+                </div>
+                <div class="small-img-col">
+                    <img src="product/n2.jpg" alt=""  id="smallsix">
+                </div>
+                <div class="small-img-col">
+                    <img src="product/n3.jpg" alt=""  id="smallseven">
+                </div>
+                <div class="small-img-col">
+                    <img src="product/n4.jpg" alt=""  id="smalleight">
+                </div>
+                <div class="small-img-col">
+                    <img src="product/n5.jpg" alt=""  id="smallnine">
+                </div>
+                <div class="small-img-col">
+                    <img src="product/n6.jpg" alt=""  id="smallten">
+                </div>
+                <div class="small-img-col">
+                    <img src="product/n7.jpg" alt=""  id="smalleleven">
+                </div>
+                <div class="small-img-col">
+                    <img src="product/n8.jpg" alt=""  id="smalltwelve">
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h4>Home / T-shirt</h4>
+            <h2 class="menfashion">Men's Fashion T Shirts</h2>
+            <h2 id="price">$87</h2>
+            <select name="" id="select">
+                <option>Select size</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>Small</option>
+                <option>Large</option>
+            </select>
+            <form action="">
+                <button type="submit" class="normal">Add</button>
+                <input type="number" value="1">
+            </form>
+            <h4 id="pro-d">Product Details</h4>
+            <p id="p-d">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim numquam nemo nostrum repudiandae
+                doloribus? Nesciunt laudantium veritatis voluptatem error repellendus ducimus, voluptatum quas ab
+                reprehenderit deleniti nihil, quo culpa beatae.
+            </p>
+
+        </div>
+        <script>
+            let price = document.getElementById("price")
+            let mainImg = document.getElementById("mainimg")
+            let smallImg1 = document.getElementById("smallone")
+            let smallImg2 = document.getElementById("smalltwo")
+            let smallImg3 = document.getElementById("smallthree")
+            let smallImg4 = document.getElementById("smallfour")
+            let smallImg5 = document.getElementById("smallfive")
+            let smallImg6 = document.getElementById("smallsix")
+            let smallImg7 = document.getElementById("smallseven")
+            let smallImg8 = document.getElementById("smalleight")
+            let smallImg9 = document.getElementById("smallnine")
+            let smallImg10 = document.getElementById("smallten")
+            let smallImg11 = document.getElementById("smalleleven")
+            let smallImg12 = document.getElementById("smalltwelve")
+
+            smallImg1.onclick = () => {
+                mainImg.src = smallImg1.src
+                price.innerHTML = "$87"
+            }
+            smallImg2.onclick = () => {
+                mainImg.src = smallImg2.src
+                price.innerHTML = "$80"
+            }
+            smallImg3.onclick = () => {
+                mainImg.src = smallImg3.src
+                price.innerHTML = "$70"
+            }
+            smallImg4.onclick = () => {
+                mainImg.src = smallImg4.src
+                price.innerHTML = "$67"
+            }
+            smallImg5.onclick = () => {
+                mainImg.src = smallImg5.src
+                price.innerHTML = "$27"
+            }
+            smallImg6.onclick = () => {
+                mainImg.src = smallImg6.src
+                price.innerHTML = "$22"
+
+            }
+            smallImg7.onclick = () => {
+                mainImg.src = smallImg7.src
+                price.innerHTML = "$33"
+
+            }
+            smallImg8.onclick = () => {
+                mainImg.src = smallImg8.src
+                price.innerHTML = "$15"
+
+            }
+            smallImg9.onclick = () => {
+                mainImg.src = smallImg9.src
+                price.innerHTML = "$10"
+
+            }
+            smallImg10.onclick = () => {
+                mainImg.src = smallImg10.src
+                price.innerHTML = "$71"
+
+            }
+            smallImg11.onclick = () => {
+                mainImg.src = smallImg11.src
+                price.innerHTML = "$55"
+
+            }
+            smallImg12.onclick = () => {
+                mainImg.src = smallImg12.src
+                price.innerHTML = "$18"
+
+            }
+
+        </script>
+    </section>
+
+    <section class="product1 section-p1">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Morden Design</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="product/n1.jpg" alt="">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon astronuant T-Shirts</h5>
+                    <div class="start">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$27</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+            </div>
+            <div class="pro">
+                <img src="product/n2.jpg" alt="">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon astronuant T-Shirts</h5>
+                    <div class="start">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$22</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+            </div>
+            <div class="pro">
+                <img src="product/n3.jpg" alt="">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon astronuant T-Shirts</h5>
+                    <div class="start">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$33</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+            </div>
+            <div class="pro">
+                <img src="product/n4.jpg" alt="">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon astronuant T-Shirts</h5>
+                    <div class="start">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$15</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+            </div>
+            <div class="pro">
+                <img src="product/n5.jpg" alt="">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon astronuant T-Shirts</h5>
+                    <div class="start">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$10</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+            </div>
+            <div class="pro">
+                <img src="product/n6.jpg" alt="">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon astronuant T-Shirts</h5>
+                    <div class="start">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$71</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+            </div>
+            <div class="pro">
+                <img src="product/n7.jpg" alt="">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon astronuant T-Shirts</h5>
+                    <div class="start">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$55</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+            </div>
+            <div class="pro">
+                <img src="product/n8.jpg" alt="">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon astronuant T-Shirts</h5>
+                    <div class="start">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$18</h4>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="newsletter section-m1">
+        <div class="newstext">
+            <h4>Sign up for newsletters</h4>
+            <p>Get E-mail upsates about our latest shop ans <span>special offers.</span></p>
+        </div>
+        <form class="form">
+            <input required type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </form>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <h1 class="logo">Omar</h1>
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Rwanda ,Mahama camp ,V13</p>
+            <p><strong>Phone:</strong> +250734579530</p>
+            <p><strong>Hours:</strong>09:00 AM 04:00 PM </p>
+            <div class="follow">
+                <h4>Follow us </h4>
+                <div class="icon">
+                    <i style="color: rgb(57, 57, 245) ;" class="fab fa-facebook-f"></i>
+                    <i style="color: rgb(62, 126, 223);" class="fab fa-twitter"></i>
+                    <i style="color: rgb(228, 55, 55);" class="fab fa-instagram"></i>
+                    <i style="color: black;" class="fab fa-github"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us </a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In </a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="pay/app.jpg" alt="">
+                <img src="pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Geteways</p>
+            <img src="pay/pay.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>2025, Omar etc - HTML CSS and JAVASCRIPT Ecommerce Template</p>
+        </div>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
