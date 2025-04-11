@@ -901,11 +901,12 @@ footer .copyright{
         text-align: center;
     }
     .single-pro-details .menfashion{
-        display: "none"
+        display: none;
     }
     #price{
         font-size: 25px;
         width: 100%;
+        padding-left: 75px;
     }
     .single-pro-details #select{
         margin-left: 30px;
