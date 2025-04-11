@@ -877,7 +877,7 @@ footer .copyright{
         /* height: 100%; */
     }
     .small-img-groub .small-img-col img{
-        width: 80px;
+        width: 50px;
     }
     .small-img-groub{
         display: flex;
@@ -905,6 +905,7 @@ footer .copyright{
         font-size: 11px;
         padding-right: 70px;
         text-align: center;
+        display: "none"
     }
     #price{
         font-size: 25px;
